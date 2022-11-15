@@ -33,40 +33,56 @@ const Projects = () => {
 				</div>
 
 				<div className='grid grid-cols-1 md:grid-cols-2 gap-10 w-full'>
-					{projectsData.map(({ id, image, title, description, tags }) => (
-						<div
-							key={id}
-							className='bg-[#393E46] rounded-lg overflow-hidden shadow-sm shadow-gray-300'>
-							<div className='h-[300px]'>
-								<img
-									src={image}
-									alt='Project 1'
-									className='object-cover w-full h-full'
-								/>
-							</div>
+					{projectsData.map(
+						({ id, image, title, description, tags, demo, code }) => (
+							<div
+								key={id}
+								className='bg-[#393E46] rounded-lg overflow-hidden shadow-sm shadow-gray-300'>
+								<div className='h-[300px]'>
+									<img
+										src={image}
+										alt='Project 1'
+										className='object-cover w-full h-full'
+									/>
+								</div>
 
-							<div className='p-3 text-center h-[calc(100%-300px)] flex flex-col justify-center items-center'>
-								<h3 className='text-2xl uppercase text-[#eeeeee] py-2 font-bold border-b-2 border-b-[#00ADB5]'>
-									{title}
-								</h3>
-								<p className='text-[#eeeeee] opacity-75  pt-4 leading-[1.75]'>
-									{description}
-								</p>
+								<div className='p-3 text-center h-[calc(100%-300px)] flex flex-col justify-center items-center'>
+									<h3 className='text-2xl uppercase text-[#eeeeee] py-2 font-bold border-b-2 border-b-[#00ADB5]'>
+										{title}
+									</h3>
+									<p className='text-[#eeeeee] opacity-75  pt-4 leading-[1.75]'>
+										{description}
+									</p>
 
-								<div className='py-4 mt-auto'>
-									<div className='flex flex-wrap justify-center gap-5 py-4 '>
-										{tags.map((tag, index) => (
-											<span
-												key={index}
-												className='text-[#000] block text-sm p-1 bg-[#eeeeee] rounded-sm'>
-												{tag}
-											</span>
-										))}
+									<div className='py-4 mt-auto'>
+										<div className='flex flex-wrap justify-center gap-5 py-4 '>
+											{tags.map((tag, index) => (
+												<span
+													key={index}
+													className='text-[#000] block text-sm p-1 bg-[#eeeeee] rounded-sm'>
+													{tag}
+												</span>
+											))}
+										</div>
+										<div className='py-4'>
+											<a
+												href={demo}
+												target='_blank'
+												className='px-4 py-2 bg-[#11999E] hover:bg-[#30E3CA] text-[#eeeeee] uppercase mr-8'>
+												Demo
+											</a>
+											<a
+												href={code}
+												target='_blank'
+												className='px-4 py-2 bg-[#11999E] hover:bg-[#30E3CA] text-[#eeeeee] uppercase'>
+												Code
+											</a>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					))}
+						)
+					)}
 				</div>
 			</div>
 		</section>
