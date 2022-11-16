@@ -2,36 +2,9 @@ import { useRef } from 'react';
 import { Link } from 'react-scroll';
 import { useIntersection } from '../hooks/useIntersection';
 // Icons
-import { FaGithub, FaLinkedin, FaArrowDown } from 'react-icons/fa';
-import { AiOutlineMail } from 'react-icons/ai';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-// File
-import Resume from '../assets/Sang_Le_Resume.pdf';
-
-// Global data
-const heroData = [
-	{
-		id: 1,
-		image: <FaGithub size={20} />,
-		href: 'https://github.com/sqle157',
-	},
-	{
-		id: 2,
-		image: <FaLinkedin size={20} />,
-		href: 'https://www.linkedin.com/in/sangle98/',
-	},
-	{
-		id: 3,
-		image: <AiOutlineMail size={20} />,
-		href: 'mailto:sqle157@gmail.com',
-	},
-	{
-		id: 4,
-		image: <BsFillPersonLinesFill size={20} />,
-		href: Resume,
-		download: true,
-	},
-];
+import { FaArrowDown } from 'react-icons/fa';
+// Data
+import { heroData } from '../data/heroData';
 
 const Hero = () => {
 	// get a reference to the element
@@ -40,10 +13,12 @@ const Hero = () => {
 	const { visible } = useIntersection(ref);
 
 	return (
-		<section id='home' className='w-full h-screen text-center '>
+		<section
+			id='home'
+			className='relative w-full h-screen text-center flex items-center justify-center'>
 			<div
 				ref={ref}
-				className={`relative max-w-[1240px] w-full h-full mx-auto p-2 flex flex-col justify-center items-center gap-4 ${
+				className={`max-w-[1240px] w-full mx-auto p-2 flex flex-col justify-center items-center gap-4 ${
 					visible ? 'opacity-100' : 'opacity-0'
 				} ease-in duration-700 delay-100`}>
 				<div>
@@ -75,15 +50,16 @@ const Hero = () => {
 						</a>
 					))}
 				</div>
-
-				<Link
-					className='cursor-pointer rounded-full w-16 h-16 absolute bottom-3 grid place-items-center bg-[#EEEEEE] text-black animate-bounce'
-					to='about'
-					smooth
-					duration={200}>
-					<FaArrowDown size={20} />
-				</Link>
 			</div>
+			<Link
+				className={`cursor-pointer rounded-full w-16 h-16 absolute bottom-3 grid place-items-center bg-[#EEEEEE] text-black animate-bounce ${
+					visible ? 'opacity-100' : 'opacity-0'
+				} ease-in duration-700 delay-100`}
+				to='about'
+				smooth
+				duration={200}>
+				<FaArrowDown size={20} />
+			</Link>
 		</section>
 	);
 };

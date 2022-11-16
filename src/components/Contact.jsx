@@ -14,7 +14,7 @@ const Contact = () => {
 	return (
 		<section
 			id='contact'
-			className='md:py-[10rem] py-[7.5rem] w-full px-5 border-b border-b-gray-600 bg-[#393E46] grid grid-cols-1 gap-20'>
+			className='md:pt-[10rem] md-pb[7.5rem] py-[7.5rem] w-full px-5 border-b border-b-gray-600 bg-[#393E46] grid grid-cols-1 gap-20'>
 			<div
 				ref={ref}
 				className={`max-w-[1240px] w-full mx-auto grid grid-cols-1 gap-10 ${
