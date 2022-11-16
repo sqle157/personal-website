@@ -50,7 +50,7 @@ const Projects = () => {
 								<div className='h-[300px]'>
 									<img
 										src={image}
-										alt='Project 1'
+										alt={title}
 										className='object-cover w-full h-full'
 									/>
 								</div>
