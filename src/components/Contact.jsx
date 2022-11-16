@@ -47,7 +47,7 @@ const Contact = () => {
 							<a
 								href='https://github.com/sqle157'
 								target='_blank'
-								className='text-white text-md py-6 flex items-center gap-3 w-max'>
+								className='text-white text-md py-6 flex items-center gap-3 focus:outline-gray-600'>
 								<FaGithub size={32} />
 								https://github.com/sqle157
 							</a>
@@ -56,7 +56,7 @@ const Contact = () => {
 							<a
 								href='https://www.linkedin.com/in/sangle98/'
 								target='_blank'
-								className='text-white text-md py-6 flex items-center md:ml-auto gap-3 w-max'>
+								className='text-white text-md py-6 flex items-center md:ml-auto md:justify-end gap-3 focus:outline-gray-600'>
 								<FaLinkedin size={32} />
 								linkedin.com/in/sangle98/
 							</a>
@@ -65,7 +65,7 @@ const Contact = () => {
 							<a
 								href='mailto:sqle157@gmail.com'
 								target='_blank'
-								className='text-white text-md py-6  flex items-center gap-3 w-max'>
+								className='text-white text-md py-6  flex items-center gap-3 focus:outline-gray-600'>
 								<AiOutlineMail size={32} />
 								sqle157@gmail.com
 							</a>

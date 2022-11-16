@@ -68,13 +68,13 @@ const Projects = () => {
 												<a
 													href={demo}
 													target='_blank'
-													className='px-4 py-2 bg-[#11999E] hover:bg-[#30E3CA] text-[#eeeeee] uppercase mr-8'>
+													className='px-4 py-2 bg-[#11999E] hover:bg-[#30E3CA] focus:bg-[#30E3CA] focus:outline-none text-[#eeeeee] uppercase mr-8'>
 													Demo
 												</a>
 												<a
 													href={code}
 													target='_blank'
-													className='px-4 py-2 bg-[#11999E] hover:bg-[#30E3CA] text-[#eeeeee] uppercase'>
+													className='px-4 py-2 bg-[#11999E] hover:bg-[#30E3CA] focus:bg-[#30E3CA] focus:outline-none text-[#eeeeee] uppercase'>
 													Code
 												</a>
 											</div>
