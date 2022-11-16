@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
+import { useActiveContext } from '../hooks/useActiveContext';
 import { Link } from 'react-scroll';
 // Logo & Icons
 import Logo from '../assets/sang-logo.png';
@@ -11,6 +12,8 @@ import { linkData } from '../data/linkData';
 const Navbar = () => {
 	const [mobileMenu, setMobileMenu] = useState(false);
 	const [scrollY, setScrollY] = useState(window.scrollY);
+	// get the active element from global context
+	const { activeElement } = useActiveContext();
 
 	// Handle mobile menu
 	const handleMobileMenu = () => {
@@ -63,7 +66,9 @@ const Navbar = () => {
 							{linkData.map(({ id, to }) => (
 								<li key={id}>
 									<Link
-										className='cursor-pointer uppercase tracking-wide text-[#EEEEEE] border-[#00ADB5] hover:border-b-2'
+										className={`cursor-pointer uppercase tracking-wide text-[#EEEEEE] border-[#00ADB5] hover:border-b-2 ${
+											activeElement === to ? 'border-b-2' : ''
+										}`}
 										to={to}
 										smooth
 										duration={200}>

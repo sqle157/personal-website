@@ -1,16 +1,25 @@
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { useIntersection } from '../hooks/useIntersection';
+import { useActiveContext } from '../hooks/useActiveContext';
 // Icons
 import { FaArrowDown } from 'react-icons/fa';
 // Data
 import { heroData } from '../data/heroData';
 
 const Hero = () => {
+	const { dispatch } = useActiveContext();
 	// get a reference to the element
 	const ref = useRef();
 	// pass that element into the custom hook
 	const { visible } = useIntersection(ref);
+
+	// set the active element to null if it's visible
+	useEffect(() => {
+		if (visible) {
+			dispatch({ type: 'SET_ACTIVE', payload: null });
+		}
+	}, [visible]);
 
 	return (
 		<section

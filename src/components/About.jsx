@@ -1,14 +1,23 @@
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import { useIntersection } from '../hooks/useIntersection';
+import { useActiveContext } from '../hooks/useActiveContext';
 import { Link } from 'react-scroll';
 // Images & Icons
 import Avatar from '../assets/avatar.jpeg';
 
 const About = () => {
+	const { dispatch } = useActiveContext();
 	// get a reference to the element
 	const ref = useRef();
 	// pass that element into the custom hook
 	const { visible } = useIntersection(ref);
+
+	// set the active element if it's visible
+	useEffect(() => {
+		if (visible) {
+			dispatch({ type: 'SET_ACTIVE', payload: 'about' });
+		}
+	}, [visible]);
 
 	return (
 		<section
@@ -16,7 +25,7 @@ const About = () => {
 			className='md:py-[10rem] py-[7.5rem] w-full px-5 border-b border-b-gray-600'>
 			<div
 				ref={ref}
-				className={`max-w-[1240px] w-full mx-auto grid grid-cols-1 lg:grid-cols-3 gap-x-8 lg:gap-y-0 ${
+				className={`max-w-[1240px] w-full mx-auto grid grid-cols-1 lg:grid-cols-3 gap-x-8 gap-y-6 lg:gap-y-0 ${
 					visible ? 'opacity-100' : 'opacity-0'
 				} ease-in duration-500`}>
 				<div className='lg:col-span-3 w-full order-1 mx-auto lg:m-0 text-center lg:text-start flex items-center gap-5'>

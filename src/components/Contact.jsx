@@ -1,15 +1,24 @@
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import { useIntersection } from '../hooks/useIntersection';
+import { useActiveContext } from '../hooks/useActiveContext';
 import { Link } from 'react-scroll';
 // Icons
 import { FaLinkedin, FaGithub, FaArrowUp } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 
 const Contact = () => {
+	const { dispatch } = useActiveContext();
 	// get a reference to the element
 	const ref = useRef();
 	// pass that element into the custom hook
 	const { visible } = useIntersection(ref);
+
+	// set the active element if it's visible
+	useEffect(() => {
+		if (visible) {
+			dispatch({ type: 'SET_ACTIVE', payload: 'contact' });
+		}
+	}, [visible]);
 
 	return (
 		<section
