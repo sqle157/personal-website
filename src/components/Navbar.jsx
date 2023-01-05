@@ -43,10 +43,10 @@ const Navbar = () => {
 	return (
 		<header className='header'>
 			<div
-				className={`fixed w-full h-20 z-[100] ${
+				className={`fixed z-[100] h-20 w-full ${
 					scrollY > 90 && 'bg-[#252A34] shadow-sm shadow-gray-500'
-				} ease-in duration-300`}>
-				<div className='flex justify-between items-center w-full h-full max-w-[1240px] mx-auto pr-4'>
+				} duration-300 ease-in`}>
+				<div className='mx-auto flex h-full w-full max-w-[1240px] items-center justify-between pr-4'>
 					{/* Logo */}
 					<div className='h-full'>
 						<Link to='home' smooth duration={200}>
@@ -62,11 +62,11 @@ const Navbar = () => {
 
 					{/* Desktop Navbar */}
 					<nav className='hidden md:block'>
-						<ul className='flex gap-12 items-center'>
+						<ul className='flex items-center gap-12'>
 							{linkData.map(({ id, to }) => (
 								<li key={id}>
 									<Link
-										className={`cursor-pointer uppercase tracking-wide text-[#EEEEEE] border-[#00ADB5] hover:border-b-2 ${
+										className={`cursor-pointer border-[#00ADB5] uppercase tracking-wide text-[#EEEEEE] hover:border-b-2 ${
 											activeElement === to ? 'border-b-2' : ''
 										}`}
 										to={to}
@@ -82,7 +82,7 @@ const Navbar = () => {
 					{/* Mobile Menu Burger */}
 					<div
 						onClick={handleMobileMenu}
-						className='cursor-pointer z-10 md:hidden text-[#eeeeee]'>
+						className='z-10 cursor-pointer text-[#eeeeee] md:hidden'>
 						{!mobileMenu ? <FaBars size={20} /> : <FaTimes size={20} />}
 					</div>
 
@@ -91,14 +91,14 @@ const Navbar = () => {
 						<div
 							className={`${
 								mobileMenu ? 'block' : 'hidden'
-							} fixed left-0 top-0 w-full h-screen bg-[#222831] origin-top animate-open-menu`}>
-							<div className='grid place-items-center w-full h-full p-10'>
+							} fixed left-0 top-0 h-screen w-full origin-top animate-open-menu bg-[#222831]`}>
+							<div className='grid h-full w-full place-items-center p-10'>
 								<div>
-									<ul className='flex flex-col justify-center gap-12 items-center'>
+									<ul className='flex flex-col items-center justify-center gap-12'>
 										{linkData.map(({ id, to }) => (
 											<li key={id}>
 												<Link
-													className='cursor-pointer uppercase tracking-wide text-[#EEEEEE] text-3xl'
+													className='cursor-pointer text-3xl uppercase tracking-wide text-[#EEEEEE]'
 													onClick={handleMobileMenu}
 													to={to}
 													smooth

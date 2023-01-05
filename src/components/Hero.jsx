@@ -18,29 +18,29 @@ const Hero = () => {
 		<ActiveElementContainer visible={visible} active={null}>
 			<section
 				id='home'
-				className='relative w-full h-screen text-center flex items-center justify-center'>
+				className='relative flex h-screen w-full items-center justify-center text-center'>
 				<div
 					ref={ref}
-					className={`max-w-[1240px] w-full mx-auto p-2 flex flex-col justify-center items-center gap-4 ${
+					className={`mx-auto flex w-full max-w-[1240px] flex-col items-center justify-center gap-4 p-2 ${
 						visible ? 'opacity-100' : 'opacity-0'
-					} ease-in duration-700 delay-100`}>
+					} delay-100 duration-700 ease-in`}>
 					<div>
-						<p className='uppercase font-semibold text-2xl tracking-wider text-[#EEEEEE] opacity-75'>
+						<p className='text-2xl font-semibold uppercase tracking-wider text-[#EEEEEE] opacity-75'>
 							Nice to meet you.
 						</p>
-						<h1 className='text-[#EEEEEE] text-5xl md:text-7xl py-3 font-bold'>
+						<h1 className='py-3 text-5xl font-bold text-[#EEEEEE] md:text-7xl'>
 							I'm <span className='text-[#00ADB5]'>Sang</span>,
 						</h1>
-						<h2 className='text-[#EEEEEE] uppercase text-4xl md:text-5xl py-3 font-bold'>
+						<h2 className='py-3 text-4xl font-bold uppercase text-[#EEEEEE] md:text-5xl'>
 							A Front-end Web Developer
 						</h2>
-						<p className=' text-[#EEEEEE] opacity-75 py-2 sm:max-w-[70%] mx-auto'>
+						<p className=' mx-auto py-2 text-[#EEEEEE] opacity-75 sm:max-w-[70%]'>
 							I'm focused on building responsive front-end web applications.
 							With every line of code, I strive to create a clean and beautiful
 							product.
 						</p>
 					</div>
-					<div className='flex flex-wrap items-center justify-between max-w-[330px] py-4 gap-4'>
+					<div className='flex max-w-[330px] flex-wrap items-center justify-between gap-4 py-4'>
 						{heroData.map(({ id, image, href, download }) => (
 							<a
 								key={id}
@@ -48,16 +48,16 @@ const Hero = () => {
 								rel='noreferrer'
 								target='_blank'
 								download={download}
-								className='rounded-full shadow-md shadow-gray-400 p-6 cursor-pointer bg-[#EEEEEE] text-black hover:scale-110 focus-within:scale-110 outline-none ease-in duration-300'>
+								className='cursor-pointer rounded-full bg-[#EEEEEE] p-6 text-black shadow-md shadow-gray-400 outline-none duration-300 ease-in focus-within:scale-110 hover:scale-110'>
 								{image}
 							</a>
 						))}
 					</div>
 				</div>
 				<Link
-					className={`cursor-pointer rounded-full w-16 h-16 absolute bottom-3 grid place-items-center bg-[#EEEEEE] text-black animate-bounce ${
+					className={`absolute bottom-3 grid h-16 w-16 animate-bounce cursor-pointer place-items-center rounded-full bg-[#EEEEEE] text-black ${
 						visible ? 'opacity-100' : 'opacity-0'
-					} ease-in duration-700 delay-100`}
+					} delay-100 duration-700 ease-in`}
 					to='about'
 					smooth
 					duration={200}>

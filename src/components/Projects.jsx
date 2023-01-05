@@ -15,51 +15,51 @@ const Projects = () => {
 		<ActiveElementContainer visible={visible} active='projects'>
 			<section
 				id='projects'
-				className='md:py-[10rem] py-[7.5rem] w-full px-5 border-b border-b-gray-600'>
+				className='w-full border-b border-b-gray-600 py-[7.5rem] px-5 md:py-[10rem]'>
 				<div
 					ref={ref}
-					className={`max-w-[1240px] w-full mx-auto grid grid-cols-1 gap-12 ${
+					className={`mx-auto grid w-full max-w-[1240px] grid-cols-1 gap-12 ${
 						visible ? 'opacity-100' : 'opacity-0'
-					} ease-in duration-500`}>
-					<div className='mx-auto lg:m-0 flex items-center gap-5 w-full'>
+					} duration-500 ease-in`}>
+					<div className='mx-auto flex w-full items-center gap-5 lg:m-0'>
 						<span
 							className={`block ${
 								visible ? 'flex-1' : 'flex-none'
-							} h-[1px] bg-gray-600 ease-in duration-700 origin-right`}></span>
-						<h2 className='border-b-2 border-[#00ADB5] font-bold uppercase inline-block text-3xl md:text-4xl text-[#EEEEEE]'>
+							} h-[1px] origin-right bg-gray-600 duration-700 ease-in`}></span>
+						<h2 className='inline-block border-b-2 border-[#00ADB5] text-3xl font-bold uppercase text-[#EEEEEE] md:text-4xl'>
 							Projects
 						</h2>
 						<span
 							className={`block ${
 								visible ? 'flex-1' : 'flex-none'
-							} h-[1px] bg-gray-600 ease-in duration-700 origin-right`}></span>
+							} h-[1px] origin-right bg-gray-600 duration-700 ease-in`}></span>
 					</div>
-					<div className='grid grid-cols-1 md:grid-cols-2 gap-10 w-full'>
+					<div className='grid w-full grid-cols-1 gap-10 md:grid-cols-2'>
 						{projectsData.map(
 							({ id, image, title, description, tags, demo, code }) => (
 								<div
 									key={id}
-									className='bg-[#393E46] rounded-lg overflow-hidden shadow-sm shadow-gray-300'>
+									className='overflow-hidden rounded-lg bg-[#393E46] shadow-sm shadow-gray-300'>
 									<div className='h-[300px]'>
 										<img
 											src={image}
 											alt={title}
-											className='object-cover w-full h-full'
+											className='h-full w-full object-cover'
 										/>
 									</div>
-									<div className='p-3 text-center h-[calc(100%-300px)] flex flex-col justify-center items-center'>
-										<h3 className='text-2xl uppercase text-[#eeeeee] py-2 font-bold border-b-2 border-b-[#00ADB5]'>
+									<div className='flex h-[calc(100%-300px)] flex-col items-center justify-center p-3 text-center'>
+										<h3 className='border-b-2 border-b-[#00ADB5] py-2 text-2xl font-bold uppercase text-[#eeeeee]'>
 											{title}
 										</h3>
-										<p className='text-[#eeeeee] opacity-75  pt-4 leading-[1.75]'>
+										<p className='pt-4 leading-[1.75]  text-[#eeeeee] opacity-75'>
 											{description}
 										</p>
-										<div className='py-4 mt-auto'>
+										<div className='mt-auto py-4'>
 											<div className='flex flex-wrap justify-center gap-5 py-4 '>
 												{tags.map((tag, index) => (
 													<span
 														key={index}
-														className='text-[#000] block text-sm p-1 bg-[#eeeeee] rounded-sm'>
+														className='block rounded-sm bg-[#eeeeee] p-1 text-sm text-[#000]'>
 														{tag}
 													</span>
 												))}
@@ -68,13 +68,13 @@ const Projects = () => {
 												<a
 													href={demo}
 													target='_blank'
-													className='px-4 py-2 bg-[#11999E] hover:bg-[#30E3CA] focus:bg-[#30E3CA] focus:outline-none text-[#eeeeee] uppercase mr-8'>
+													className='mr-8 bg-[#11999E] px-4 py-2 uppercase text-[#eeeeee] hover:bg-[#30E3CA] focus:bg-[#30E3CA] focus:outline-none'>
 													Demo
 												</a>
 												<a
 													href={code}
 													target='_blank'
-													className='px-4 py-2 bg-[#11999E] hover:bg-[#30E3CA] focus:bg-[#30E3CA] focus:outline-none text-[#eeeeee] uppercase'>
+													className='bg-[#11999E] px-4 py-2 uppercase text-[#eeeeee] hover:bg-[#30E3CA] focus:bg-[#30E3CA] focus:outline-none'>
 													Code
 												</a>
 											</div>
