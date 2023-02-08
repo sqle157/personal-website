@@ -59,7 +59,7 @@ const Projects = () => {
 												{tags.map((tag, index) => (
 													<span
 														key={index}
-														className='block rounded-sm bg-[#eeeeee] p-1 text-sm text-[#000]'>
+														className='block rounded-sm bg-[#FAF8F1] p-1 text-sm text-black'>
 														{tag}
 													</span>
 												))}

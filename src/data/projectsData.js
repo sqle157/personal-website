@@ -1,10 +1,21 @@
 // Images
+import Project0 from '../assets/images/project-0.png';
 import Project1 from '../assets/images/project-1.png';
 import Project2 from '../assets/images/project-2.png';
 import Project3 from '../assets/images/project-3.png';
 import Project4 from '../assets/images/project-4.png';
 
 export const projectsData = [
+	{
+		id: 0,
+		image: Project0,
+		title: 'Kanban Task Management Webapp',
+		description:
+			'A Kanban Task Management Web Application where user can keep track of and modify the tasks in different boards.',
+		tags: ['React', 'Typescript', 'MongoDB', 'Node', 'Express', 'Tailwind CSS'],
+		demo: 'https://kanban-task-management-webapp.onrender.com/',
+		code: 'https://github.com/sqle157/kanban-task-management',
+	},
 	{
 		id: 1,
 		image: Project1,
