@@ -13,7 +13,7 @@ export const projectsData = [
 		description:
 			'A Kanban Task Management Web Application where user can keep track of and modify the tasks in different boards.',
 		tags: ['React', 'Typescript', 'MongoDB', 'Node', 'Express', 'Tailwind CSS'],
-		demo: 'https://kanban-task-management-webapp.onrender.com/',
+		demo: 'https://kanban-task-management-production.up.railway.app/',
 		code: 'https://github.com/sqle157/kanban-task-management',
 	},
 	{
@@ -23,7 +23,7 @@ export const projectsData = [
 		description:
 			'A simple note app where user can perform CRUD operation as well as signup for an account and login/logout.',
 		tags: ['React', 'MongoDB', 'Node', 'Express', 'CSS'],
-		demo: 'https://mern-note-app.onrender.com/login',
+		demo: 'https://mern-note-app-production.up.railway.app/',
 		code: 'https://github.com/sqle157/mern-note-app',
 	},
 	{
@@ -33,7 +33,7 @@ export const projectsData = [
 		description:
 			'An Ecommerce Website where customer will be able to browse through the website and look for their favorite product.',
 		tags: ['React', 'MongoDB', 'Node', 'Express', 'SASS'],
-		demo: 'https://mern-ecommerce-website.onrender.com/',
+		demo: 'https://mern-ecommerce-website-production.up.railway.app/',
 		code: 'https://github.com/sqle157/mern-ecommerce-website',
 	},
 	{
