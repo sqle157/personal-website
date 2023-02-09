@@ -51,7 +51,7 @@ export const projectsData = [
 		image: Project4,
 		title: 'Designo multi-page website',
 		description:
-			'A Multi Page Website where user can navigate through different pages.',
+			'A Multi Page Website with different layout design for each page.',
 		tags: ['Frontend', 'React', 'Javascript', 'CSS'],
 		demo: 'https://designo-multi-page-tau.vercel.app/',
 		code: 'https://github.com/sqle157/designo-multi-page',
