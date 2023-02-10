@@ -37,7 +37,7 @@ const Contact = () => {
 							} h-[1px] origin-right bg-gray-600 duration-700 ease-in`}></span>
 					</div>
 
-					<p className='mx-auto max-w-[700px] text-center text-[0.875rem] text-[#eeeeee] opacity-75 sm:text-2xl'>
+					<p className='mx-auto max-w-[700px] text-center text-base text-[#eeeeee] opacity-75 sm:text-xl'>
 						My inbox is always open. Whether you have a question or just want to
 						say hi, I'll try my best to get back to you!{' '}
 					</p>
