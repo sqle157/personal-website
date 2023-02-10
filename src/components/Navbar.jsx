@@ -49,7 +49,7 @@ const Navbar = () => {
 				<div className='mx-auto flex h-full w-full max-w-[1240px] items-center justify-between pr-4'>
 					{/* Logo */}
 					<div className='h-full'>
-						<Link to='home' href='home' smooth duration={200}>
+						<Link to='home' href='home' smooth duration={200} aria-label='logo'>
 							<img
 								className='cursor-pointer'
 								src={Logo}

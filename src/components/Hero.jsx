@@ -48,6 +48,7 @@ const Hero = () => {
 								rel='noreferrer'
 								target='_blank'
 								download={download}
+								aria-label={href}
 								className='cursor-pointer rounded-full bg-[#EEEEEE] p-6 text-black shadow-md shadow-gray-400 outline-none duration-300 ease-in focus-within:scale-110 hover:scale-110'>
 								{image}
 							</a>
@@ -60,6 +61,7 @@ const Hero = () => {
 					} delay-100 duration-700 ease-in`}
 					to='about'
 					href='about'
+					aria-label='scroll down button'
 					smooth
 					duration={200}>
 					<FaArrowDown size={20} />

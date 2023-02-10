@@ -67,6 +67,7 @@ const Projects = () => {
 											<div className='mt-4 flex justify-end'>
 												<a
 													href={demo}
+													aria-label='Code Demo'
 													target='_blank'
 													className='mr-8 text-[#00FFF6] shadow-md'>
 													<svg
@@ -89,6 +90,7 @@ const Projects = () => {
 												<a
 													href={code}
 													target='_blank'
+													aria-label='Codebase'
 													className='text-[#00FFF6] shadow-md'>
 													<svg
 														xmlns='http://www.w3.org/2000/svg'
