@@ -1,9 +1,9 @@
 // Images
-import Project0 from '../assets/images/project-0.png';
-import Project1 from '../assets/images/project-1.png';
-import Project2 from '../assets/images/project-2.png';
-import Project3 from '../assets/images/project-3.png';
-import Project4 from '../assets/images/project-4.png';
+import Project0 from '../assets/images/project-0.webp';
+import Project1 from '../assets/images/project-1.webp';
+import Project2 from '../assets/images/project-2.webp';
+import Project3 from '../assets/images/project-3.webp';
+import Project4 from '../assets/images/project-4.webp';
 
 export const projectsData = [
 	{

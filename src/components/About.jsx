@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 // Components
 import ActiveElementContainer from './ActiveElementContainer/ActiveElementContainer';
 // Images & Icons
-import Avatar from '../assets/avatar.jpeg';
+import Avatar from '../assets/avatar.webp';
 
 const About = () => {
 	// get a reference to the element
@@ -23,11 +23,11 @@ const About = () => {
 						visible ? 'opacity-100' : 'opacity-0'
 					} duration-500 ease-in`}>
 					<div
-						className={`order-1 mx-auto flex w-full items-center gap-5 text-center ${
+						className={`order-1 mx-auto flex w-full items-center gap-5 text-center lg:col-span-3 lg:m-0 lg:text-start ${
 							visible
 								? 'before:h-[1px] before:flex-1 before:origin-right  before:bg-gray-600 before:duration-700 before:ease-in after:h-[1px] after:flex-1 after:origin-right after:bg-gray-600 after:duration-700 after:ease-in'
 								: 'before:flex-none after:flex-none'
-						}	 lg:col-span-3 lg:m-0 lg:text-start`}>
+						}`}>
 						<h2 className='relative inline-block border-b-2 border-[#00ADB5] text-3xl font-bold uppercase text-[#EEEEEE] md:text-4xl'>
 							About Me
 						</h2>

@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { useActiveContext } from '../hooks/useActiveContext';
 import { Link } from 'react-scroll';
 // Logo & Icons
-import Logo from '../assets/sang-logo.png';
+import Logo from '../assets/sang-logo.webp';
 import { FaBars, FaTimes } from 'react-icons/fa';
 // Components
 import Hero from './Hero';
