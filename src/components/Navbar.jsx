@@ -49,11 +49,16 @@ const Navbar = () => {
 				<div className='mx-auto flex h-full w-full max-w-[1240px] items-center justify-between pr-4'>
 					{/* Logo */}
 					<div className='h-full'>
-						<Link to='home' href='home' smooth duration={200} aria-label='logo'>
+						<Link
+							to='home'
+							href='home'
+							smooth
+							duration={200}
+							aria-label='Navigate to home section link'>
 							<img
 								className='cursor-pointer'
 								src={Logo}
-								alt=''
+								alt='Navigate to home section'
 								width={105}
 								height={50}
 							/>
@@ -61,8 +66,8 @@ const Navbar = () => {
 					</div>
 
 					{/* Desktop Navbar */}
-					<nav className='hidden md:block'>
-						<ul className='flex items-center gap-12'>
+					<nav>
+						<ul className='hidden items-center gap-12 md:flex'>
 							{linkData.map(({ id, to }) => (
 								<li key={id}>
 									<Link
@@ -78,18 +83,26 @@ const Navbar = () => {
 								</li>
 							))}
 						</ul>
+						{/* Mobile Menu Burger */}
+						<button
+							onClick={handleMobileMenu}
+							className='z-10 cursor-pointer text-[#eeeeee] md:hidden'
+							aria-label='Mobile Menu'
+							aria-expanded={mobileMenu}
+							aria-controls='mobile-menu'
+							type='button'>
+							{!mobileMenu ? (
+								<FaBars size={20} aria-hidden />
+							) : (
+								<FaTimes size={20} aria-hidden />
+							)}
+						</button>
 					</nav>
-
-					{/* Mobile Menu Burger */}
-					<div
-						onClick={handleMobileMenu}
-						className='z-10 cursor-pointer text-[#eeeeee] md:hidden'>
-						{!mobileMenu ? <FaBars size={20} /> : <FaTimes size={20} />}
-					</div>
 
 					{/* Mobile Navbar */}
 					{mobileMenu && (
 						<div
+							id='mobile-menu'
 							className={`${
 								mobileMenu ? 'block' : 'hidden'
 							} fixed left-0 top-0 h-screen w-full origin-top animate-open-menu bg-[#222831]`}>

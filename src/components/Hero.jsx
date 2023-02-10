@@ -41,15 +41,19 @@ const Hero = () => {
 						</p>
 					</div>
 					<div className='flex max-w-[330px] flex-wrap items-center justify-between gap-4 py-4'>
-						{heroData.map(({ id, image, href, download }) => (
+						{heroData.map(({ id, title, image, href, download }) => (
 							<a
 								key={id}
 								href={href}
 								rel='noreferrer'
 								target='_blank'
 								download={download}
-								aria-label={href}
-								className='cursor-pointer rounded-full bg-[#EEEEEE] p-4 text-black shadow-md shadow-gray-400 outline-none duration-300 ease-in focus-within:scale-110 hover:scale-110 sm:p-6'>
+								aria-label={
+									!download
+										? `Open ${title} page in a new tab`
+										: `Download my ${title}`
+								}
+								className='cursor-pointer rounded-full bg-[#EEEEEE] p-4 text-black shadow-md shadow-gray-400 duration-300 ease-in focus-within:scale-110 hover:scale-110 sm:p-6'>
 								{image}
 							</a>
 						))}

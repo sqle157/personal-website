@@ -21,18 +21,15 @@ const Projects = () => {
 					className={`mx-auto grid w-full max-w-[1240px] grid-cols-1 gap-12 ${
 						visible ? 'opacity-100' : 'opacity-0'
 					} duration-500 ease-in`}>
-					<div className='mx-auto flex w-full items-center gap-5 lg:m-0'>
-						<span
-							className={`block ${
-								visible ? 'flex-1' : 'flex-none'
-							} h-[1px] origin-right bg-gray-600 duration-700 ease-in`}></span>
+					<div
+						className={`mx-auto flex w-full items-center gap-5 lg:m-0 ${
+							visible
+								? 'before:h-[1px] before:flex-1 before:origin-right  before:bg-gray-600 before:duration-700 before:ease-in after:h-[1px] after:flex-1 after:origin-right after:bg-gray-600 after:duration-700 after:ease-in'
+								: 'before:flex-none after:flex-none'
+						}`}>
 						<h2 className='inline-block border-b-2 border-[#00ADB5] text-3xl font-bold uppercase text-[#EEEEEE] md:text-4xl'>
 							Projects
 						</h2>
-						<span
-							className={`block ${
-								visible ? 'flex-1' : 'flex-none'
-							} h-[1px] origin-right bg-gray-600 duration-700 ease-in`}></span>
 					</div>
 					<div className='grid w-full grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3'>
 						{projectsData.map(
@@ -55,19 +52,22 @@ const Projects = () => {
 											{description}
 										</p>
 										<div className='mt-6 w-full border-t-2 border-t-[#00ADB5] text-start'>
-											<div className='grid w-full grid-cols-3 gap-3 py-4 text-center text-white'>
+											<ul
+												role='list'
+												className='grid w-full grid-cols-3 gap-3 py-4 text-center text-white'>
 												{tags.map((tag, index) => (
-													<span
+													<li
 														key={index}
+														role='listitem'
 														className='grid place-items-center rounded-lg bg-[#495670] p-1 text-[12px] text-[#00FFF6] shadow-xl'>
 														{tag}
-													</span>
+													</li>
 												))}
-											</div>
+											</ul>
 											<div className='mt-4 flex justify-end'>
 												<a
 													href={demo}
-													aria-label='Code Demo'
+													aria-label='Open code demo in a new tab'
 													target='_blank'
 													className='mr-8 text-[#00FFF6] shadow-md'>
 													<svg
@@ -80,7 +80,8 @@ const Projects = () => {
 														stroke='currentColor'
 														fill='none'
 														strokeLinecap='round'
-														strokeLinejoin='round'>
+														strokeLinejoin='round'
+														aria-hidden='true'>
 														<path stroke='none' d='M0 0h24v24H0z' fill='none' />
 														<path d='M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5' />
 														<path d='M10 14l10 -10' />
@@ -90,7 +91,7 @@ const Projects = () => {
 												<a
 													href={code}
 													target='_blank'
-													aria-label='Codebase'
+													aria-label='Open gihub codebase in a new tab'
 													className='text-[#00FFF6] shadow-md'>
 													<svg
 														xmlns='http://www.w3.org/2000/svg'
@@ -102,7 +103,8 @@ const Projects = () => {
 														stroke='currentColor'
 														fill='none'
 														strokeLinecap='round'
-														strokeLinejoin='round'>
+														strokeLinejoin='round'
+														aria-hidden='true'>
 														<path stroke='none' d='M0 0h24v24H0z' fill='none' />
 														<path d='M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5' />
 													</svg>

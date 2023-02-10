@@ -21,27 +21,29 @@ const Skills = () => {
 					className={`mx-auto grid w-full max-w-[1240px] grid-cols-1 gap-12 ${
 						visible ? 'opacity-100' : 'opacity-0'
 					} duration-500 ease-in`}>
-					<div className='mx-auto flex w-full items-center gap-5 lg:m-0'>
-						<span
-							className={`block ${
-								visible ? 'flex-1' : 'flex-none'
-							} h-[1px] origin-right bg-gray-600 duration-700 ease-in`}></span>
+					<div
+						className={`mx-auto flex w-full items-center gap-5 lg:m-0 ${
+							visible
+								? 'before:h-[1px] before:flex-1 before:origin-right  before:bg-gray-600 before:duration-700 before:ease-in after:h-[1px] after:flex-1 after:origin-right after:bg-gray-600 after:duration-700 after:ease-in'
+								: 'before:flex-none after:flex-none'
+						}`}>
 						<h2 className='inline-block border-b-2 border-[#00ADB5] text-3xl font-bold uppercase text-[#EEEEEE] md:text-4xl'>
 							Skills
 						</h2>
-						<span
-							className={`block ${
-								visible ? 'flex-1' : 'flex-none'
-							} h-[1px] origin-right bg-gray-600 duration-700 ease-in`}></span>
 					</div>
-					<div className='grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4'>
-						{skillsData.map(({ id, image, width, height }) => (
-							<div
-								key={id}
-								className='flex items-center justify-center rounded-lg bg-[#52616B] p-8 shadow-sm shadow-gray-300 duration-300 ease-in hover:scale-105'>
-								<img src={image} alt='' width={width} height={height} />
-							</div>
-						))}
+					<div>
+						<ul
+							role='list'
+							className='grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4'>
+							{skillsData.map(({ id, image, title, width, height }) => (
+								<li
+									key={id}
+									role='listitem'
+									className='flex items-center justify-center rounded-lg bg-[#EEEEEE] p-8 shadow-sm shadow-gray-300'>
+									<img src={image} alt={title} width={width} height={height} />
+								</li>
+							))}
+						</ul>
 					</div>
 				</div>
 			</section>
