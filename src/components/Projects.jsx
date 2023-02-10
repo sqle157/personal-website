@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { useIntersection } from '../hooks/useIntersection';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 // Components
 import ActiveElementContainer from './ActiveElementContainer/ActiveElementContainer';
 // Data
@@ -43,9 +44,11 @@ const Projects = () => {
 												media='(max-width: 640px)'
 												srcSet={image.mobile}
 											/>
-											<img
+											<LazyLoadImage
 												src={image.desktop}
 												alt={title}
+												width={380}
+												height={450}
 												className='h-full w-full object-cover'
 											/>
 										</picture>

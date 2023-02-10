@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { useIntersection } from '../hooks/useIntersection';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 // Components
 import ActiveElementContainer from './ActiveElementContainer/ActiveElementContainer';
 // Data
@@ -40,7 +41,12 @@ const Skills = () => {
 									key={id}
 									role='listitem'
 									className='flex items-center justify-center rounded-lg bg-[#EEEEEE] p-8 shadow-sm shadow-gray-300'>
-									<img src={image} alt={title} width={width} height={height} />
+									<LazyLoadImage
+										src={image}
+										alt={title}
+										width={width}
+										height={height}
+									/>
 								</li>
 							))}
 						</ul>

@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { useIntersection } from '../hooks/useIntersection';
 import { Link } from 'react-scroll';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 // Components
 import ActiveElementContainer from './ActiveElementContainer/ActiveElementContainer';
 // Images & Icons
@@ -81,7 +82,11 @@ const About = () => {
 								srcSet={AvatarMobile}
 								type='image/webp'
 							/>
-							<img src={Avatar} alt='' className='h-full w-full object-cover' />
+							<LazyLoadImage
+								src={Avatar}
+								alt=''
+								className='h-full w-full object-cover'
+							/>
 						</picture>
 					</div>
 				</div>
