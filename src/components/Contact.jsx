@@ -75,6 +75,7 @@ const Contact = () => {
 				<Link
 					className='mx-auto grid h-16 w-16 animate-bounce cursor-pointer place-items-center rounded-full bg-[#EEEEEE] text-black'
 					to='home'
+					href='home'
 					smooth
 					duration={200}>
 					<FaArrowUp size={20} />

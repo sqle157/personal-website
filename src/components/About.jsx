@@ -66,6 +66,7 @@ const About = () => {
 						<div className='mt-20 flex items-center gap-5'>
 							<Link
 								to='projects'
+								href='projects'
 								smooth
 								duration={200}
 								className='inline-block cursor-pointer border-b-2 border-b-[#00ADB5]  font-semibold uppercase text-[#EEEEEE] opacity-75'>

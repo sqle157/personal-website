@@ -59,6 +59,7 @@ const Hero = () => {
 						visible ? 'opacity-100' : 'opacity-0'
 					} delay-100 duration-700 ease-in`}
 					to='about'
+					href='about'
 					smooth
 					duration={200}>
 					<FaArrowDown size={20} />

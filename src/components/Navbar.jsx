@@ -49,7 +49,7 @@ const Navbar = () => {
 				<div className='mx-auto flex h-full w-full max-w-[1240px] items-center justify-between pr-4'>
 					{/* Logo */}
 					<div className='h-full'>
-						<Link to='home' smooth duration={200}>
+						<Link to='home' href='home' smooth duration={200}>
 							<img
 								className='cursor-pointer'
 								src={Logo}
@@ -70,6 +70,7 @@ const Navbar = () => {
 											activeElement === to ? 'border-b-2' : ''
 										}`}
 										to={to}
+										href={to}
 										smooth
 										duration={200}>
 										{to}
@@ -101,6 +102,7 @@ const Navbar = () => {
 													className='cursor-pointer text-3xl uppercase tracking-wide text-[#EEEEEE]'
 													onClick={handleMobileMenu}
 													to={to}
+													href={to}
 													smooth
 													duration={200}>
 													{to}
