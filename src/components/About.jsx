@@ -4,7 +4,8 @@ import { Link } from 'react-scroll';
 // Components
 import ActiveElementContainer from './ActiveElementContainer/ActiveElementContainer';
 // Images & Icons
-import Avatar from '../assets/avatar.webp';
+import Avatar from '../assets/images/desktop/avatar-desktop.webp';
+import AvatarMobile from '../assets/images/mobile/avatar-mobile.webp';
 
 const About = () => {
 	// get a reference to the element
@@ -74,7 +75,14 @@ const About = () => {
 						</div>
 					</div>
 					<div className='order-2 mx-auto mt-5 aspect-square w-[300px] self-center overflow-hidden rounded-full shadow-md shadow-gray-600 lg:order-3 lg:col-span-1 lg:mt-0 lg:w-full'>
-						<img src={Avatar} alt='' className='h-full w-full object-cover' />
+						<picture>
+							<source
+								media='(max-width: 1024px)'
+								srcSet={AvatarMobile}
+								type='image/webp'
+							/>
+							<img src={Avatar} alt='' className='h-full w-full object-cover' />
+						</picture>
 					</div>
 				</div>
 			</section>

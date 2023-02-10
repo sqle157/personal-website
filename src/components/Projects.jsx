@@ -31,20 +31,26 @@ const Projects = () => {
 							Projects
 						</h2>
 					</div>
-					<div className='grid w-full grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3'>
+					<div className='grid w-full grid-flow-row-dense grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3'>
 						{projectsData.map(
 							({ id, image, title, description, tags, demo, code }) => (
 								<div
 									key={id}
-									className='group relative min-h-[350px] overflow-hidden rounded-lg bg-[#393E46] shadow-sm shadow-gray-300'>
-									<div className='h-full'>
-										<img
-											src={image}
-											alt={title}
-											className='h-full w-full object-cover'
-										/>
+									className='group grid h-[450px] overflow-hidden rounded-lg bg-[#393E46] shadow-sm shadow-gray-300 sm:h-[350px]'>
+									<div className='col-span-full row-span-full h-full'>
+										<picture>
+											<source
+												media='(max-width: 640px)'
+												srcSet={image.mobile}
+											/>
+											<img
+												src={image.desktop}
+												alt={title}
+												className='h-full w-full object-cover'
+											/>
+										</picture>
 									</div>
-									<div className='absolute inset-0 z-10 flex translate-x-full flex-col items-center justify-center bg-[#112240]/75 p-3 text-center duration-300 ease-in-out group-hover:-translate-x-0'>
+									<div className='col-span-full row-span-full flex flex-col items-center justify-center bg-[#0a192f]/90 p-3 text-center duration-500 ease-in-out sm:opacity-0 group-focus-within:sm:opacity-100 group-hover:sm:opacity-100'>
 										<h3 className='mx-auto border-b-2 border-b-[#00ADB5] py-2 text-xl font-bold uppercase text-[#eeeeee]'>
 											{title}
 										</h3>
