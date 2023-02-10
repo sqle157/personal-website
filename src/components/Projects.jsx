@@ -37,8 +37,8 @@ const Projects = () => {
 							({ id, image, title, description, tags, demo, code }) => (
 								<div
 									key={id}
-									className='group grid h-[450px] overflow-hidden rounded-lg bg-[#393E46] shadow-sm shadow-gray-300 sm:h-[350px]'>
-									<div className='col-span-full row-span-full h-full'>
+									className='group grid auto-rows-[450px] place-content-stretch overflow-hidden rounded-lg bg-[#393E46] shadow-sm shadow-gray-300 sm:auto-rows-[350px]'>
+									<div className='col-span-full row-span-full '>
 										<picture>
 											<source
 												media='(max-width: 640px)'
@@ -53,7 +53,7 @@ const Projects = () => {
 											/>
 										</picture>
 									</div>
-									<div className='col-span-full row-span-full flex flex-col items-center justify-center bg-[#0a192f]/90 p-3 text-center duration-500 ease-in-out sm:opacity-0 group-focus-within:sm:opacity-100 group-hover:sm:opacity-100'>
+									<div className='col-span-full row-span-full flex  flex-col items-center justify-center bg-[#0a192f]/90 p-3 text-center duration-500 ease-in-out sm:opacity-0 group-focus-within:sm:opacity-100 group-hover:sm:opacity-100'>
 										<h3 className='mx-auto border-b-2 border-b-[#00ADB5] py-2 text-xl font-bold uppercase text-[#eeeeee]'>
 											{title}
 										</h3>
