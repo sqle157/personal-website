@@ -44,7 +44,8 @@ const Navbar = () => {
 		<header className='header'>
 			<div
 				className={`fixed z-[100] h-20 w-full ${
-					scrollY > 90 && 'bg-[#252A34] shadow-sm shadow-gray-500'
+					scrollY > 90 &&
+					'bg-[#252A34]/50 shadow-sm shadow-slate-600 backdrop-blur-md'
 				} duration-300 ease-in`}>
 				<div className='mx-auto flex h-full w-full max-w-[1240px] items-center justify-between pr-4'>
 					{/* Logo */}
@@ -54,11 +55,11 @@ const Navbar = () => {
 							href='home'
 							smooth
 							duration={200}
-							aria-label='Navigate to home section link'>
+							aria-label='Sang Le - Home'>
 							<img
 								className='cursor-pointer'
 								src={Logo}
-								alt='Navigate to home section'
+								alt='Logo'
 								width={105}
 								height={50}
 							/>
@@ -83,10 +84,11 @@ const Navbar = () => {
 								</li>
 							))}
 						</ul>
+
 						{/* Mobile Menu Burger */}
 						<button
 							onClick={handleMobileMenu}
-							className='z-10 cursor-pointer text-[#eeeeee] md:hidden'
+							className='z-10 cursor-pointer text-[#EEEEEE] md:hidden'
 							aria-label='Mobile Menu'
 							aria-expanded={mobileMenu}
 							aria-controls='mobile-menu'
@@ -97,36 +99,36 @@ const Navbar = () => {
 								<FaTimes size={20} aria-hidden />
 							)}
 						</button>
-					</nav>
 
-					{/* Mobile Navbar */}
-					{mobileMenu && (
-						<div
-							id='mobile-menu'
-							className={`${
-								mobileMenu ? 'block' : 'hidden'
-							} fixed left-0 top-0 h-screen w-full origin-top animate-open-menu bg-[#222831]`}>
-							<div className='grid h-full w-full place-items-center p-10'>
-								<div>
-									<ul className='flex flex-col items-center justify-center gap-12'>
-										{linkData.map(({ id, to }) => (
-											<li key={id}>
-												<Link
-													className='cursor-pointer text-3xl uppercase tracking-wide text-[#EEEEEE]'
-													onClick={handleMobileMenu}
-													to={to}
-													href={to}
-													smooth
-													duration={200}>
-													{to}
-												</Link>
-											</li>
-										))}
-									</ul>
+						{/* Mobile Navbar */}
+						{mobileMenu && (
+							<div
+								id='mobile-menu'
+								className={`${
+									mobileMenu ? 'block' : 'hidden'
+								} fixed left-0 top-0 h-screen w-full origin-top animate-open-menu bg-[#222831]`}>
+								<div className='grid h-full w-full place-items-center p-10'>
+									<div>
+										<ul className='flex flex-col items-center justify-center gap-12'>
+											{linkData.map(({ id, to }) => (
+												<li key={id}>
+													<Link
+														className='cursor-pointer text-3xl uppercase tracking-wide text-[#EEEEEE]'
+														onClick={handleMobileMenu}
+														to={to}
+														href={to}
+														smooth
+														duration={200}>
+														{to}
+													</Link>
+												</li>
+											))}
+										</ul>
+									</div>
 								</div>
 							</div>
-						</div>
-					)}
+						)}
+					</nav>
 				</div>
 			</div>
 			<Hero />

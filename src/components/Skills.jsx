@@ -25,7 +25,7 @@ const Skills = () => {
 					<div
 						className={`mx-auto flex w-full items-center gap-5 lg:m-0 ${
 							visible
-								? 'before:h-[1px] before:flex-1 before:origin-right  before:bg-gray-600 before:duration-700 before:ease-in after:h-[1px] after:flex-1 after:origin-right after:bg-gray-600 after:duration-700 after:ease-in'
+								? 'before:h-[1px] before:flex-1 before:origin-right before:bg-gray-600 before:duration-700 before:ease-in after:h-[1px] after:flex-1 after:origin-right after:bg-gray-600 after:duration-700 after:ease-in'
 								: 'before:flex-none after:flex-none'
 						}`}>
 						<h2 className='inline-block border-b-2 border-[#00ADB5] text-3xl font-bold uppercase text-[#EEEEEE] md:text-4xl'>

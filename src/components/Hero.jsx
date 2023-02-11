@@ -25,7 +25,7 @@ const Hero = () => {
 						visible ? 'opacity-100' : 'opacity-0'
 					} delay-100 duration-700 ease-in`}>
 					<div>
-						<p className='text-base font-semibold uppercase tracking-wider text-[#EEEEEE] opacity-75 sm:text-2xl'>
+						<p className='text-base font-semibold uppercase tracking-wider text-[#EEEEEE] sm:text-2xl'>
 							Nice to meet you.
 						</p>
 						<h1 className='py-3 text-3xl font-bold text-[#EEEEEE] sm:text-5xl md:text-7xl'>
@@ -34,7 +34,7 @@ const Hero = () => {
 						<h2 className='py-3 text-2xl font-bold uppercase text-[#EEEEEE] sm:text-4xl md:text-5xl'>
 							A Front-end Web Developer
 						</h2>
-						<p className='mx-auto py-2 text-[0.8125rem] text-[#EEEEEE] opacity-75 sm:max-w-[70%] sm:text-xl'>
+						<p className='mx-auto py-2 text-[0.8125rem] text-[#EEEEEE] sm:max-w-[70%] sm:text-xl'>
 							I'm focused on building responsive front-end web applications.
 							With every line of code, I strive to create a clean and beautiful
 							product.
@@ -46,13 +46,10 @@ const Hero = () => {
 								key={id}
 								href={href}
 								rel='noreferrer'
-								target='_blank'
+								target={!download ? '_blank' : undefined}
 								download={download}
-								aria-label={
-									!download
-										? `Open ${title} page in a new tab`
-										: `Download my ${title}`
-								}
+								title={!download ? 'open in a new tab' : undefined}
+								aria-label={!download ? `${title}` : `Download ${title}`}
 								className='cursor-pointer rounded-full bg-[#EEEEEE] p-4 text-black shadow-md shadow-gray-400 duration-300 ease-in focus-within:scale-110 hover:scale-110 sm:p-6'>
 								{image}
 							</a>

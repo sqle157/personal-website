@@ -26,7 +26,7 @@ const Contact = () => {
 					<div
 						className={`mx-auto flex w-full items-center gap-5 lg:m-0 ${
 							visible
-								? 'before:h-[1px] before:flex-1 before:origin-right  before:bg-gray-600 before:duration-700 before:ease-in after:h-[1px] after:flex-1 after:origin-right after:bg-gray-600 after:duration-700 after:ease-in'
+								? 'before:h-[1px] before:flex-1 before:origin-right before:bg-gray-600 before:duration-700 before:ease-in after:h-[1px] after:flex-1 after:origin-right after:bg-gray-600 after:duration-700 after:ease-in'
 								: 'before:flex-none after:flex-none'
 						}`}>
 						<h2 className='inline-block border-b-2 border-[#00ADB5] text-2xl font-bold uppercase text-[#EEEEEE] sm:text-3xl md:text-4xl'>
@@ -34,7 +34,7 @@ const Contact = () => {
 						</h2>
 					</div>
 
-					<p className='mx-auto max-w-[700px] text-center text-base text-[#eeeeee] opacity-75 sm:text-xl'>
+					<p className='mx-auto max-w-[700px] text-center text-base text-[#EEEEEE] opacity-75 sm:text-xl'>
 						My inbox is always open. Whether you have a question or just want to
 						say hi, I'll try my best to get back to you!{' '}
 					</p>
@@ -44,8 +44,8 @@ const Contact = () => {
 							<a
 								href='https://github.com/sqle157'
 								target='_blank'
-								aria-label='Open github page in new tab'
-								className='flex items-center gap-3 py-6 text-white duration-300 ease-in focus-within:outline-gray-600 group-focus-within:scale-105 group-hover:scale-105'>
+								title='open in a new tab'
+								className='flex items-center gap-3 py-6 text-[#EEEEEE] duration-300 ease-in focus-within:outline-gray-600 group-focus-within:scale-105 group-hover:scale-105'>
 								<FaGithub size={32} aria-hidden />
 								github.com/sqle157
 							</a>
@@ -54,8 +54,8 @@ const Contact = () => {
 							<a
 								href='https://www.linkedin.com/in/sangle98/'
 								target='_blank'
-								aria-label='Open linkedin page in new tab'
-								className='text-md e flex items-center gap-3 py-6 text-white duration-300 ease-in focus:outline-gray-600 group-focus-within:scale-105 group-hover:scale-105 md:ml-auto md:justify-end'>
+								title='open in a new tab'
+								className='text-md e flex items-center gap-3 py-6 text-[#EEEEEE] duration-300 ease-in focus:outline-gray-600 group-focus-within:scale-105 group-hover:scale-105 md:ml-auto md:justify-end'>
 								<FaLinkedin size={32} aria-hidden />
 								linkedin.com/in/sangle98/
 							</a>
@@ -64,8 +64,8 @@ const Contact = () => {
 							<a
 								href='mailto:sqle157@gmail.com'
 								target='_blank'
-								aria-label='Open email page in new tab'
-								className='text-md flex items-center gap-3 py-6 text-white duration-300 ease-in focus:outline-gray-600 group-focus-within:scale-105 group-hover:scale-105'>
+								title='open in a new tab'
+								className='text-md flex items-center gap-3 py-6 text-[#EEEEEE] duration-300 ease-in focus:outline-gray-600 group-focus-within:scale-105 group-hover:scale-105'>
 								<AiOutlineMail size={32} aria-hidden />
 								sqle157@gmail.com
 							</a>

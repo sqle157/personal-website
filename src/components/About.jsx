@@ -16,9 +16,7 @@ const About = () => {
 
 	return (
 		<ActiveElementContainer visible={visible} active='about'>
-			<section
-				id='about'
-				className='w-full border-b border-b-gray-600 py-[7.5rem] px-5 md:py-[10rem]'>
+			<section id='about' className='w-full py-[7.5rem] px-5 md:py-[10rem]'>
 				<div
 					ref={ref}
 					className={`mx-auto grid w-full max-w-[1240px] grid-cols-1 gap-x-8 gap-y-6 lg:grid-cols-3 lg:gap-y-0 ${
@@ -27,7 +25,7 @@ const About = () => {
 					<div
 						className={`order-1 mx-auto flex w-full items-center gap-5 text-center lg:col-span-3 lg:m-0 lg:text-start ${
 							visible
-								? 'before:h-[1px] before:flex-1 before:origin-right  before:bg-gray-600 before:duration-700 before:ease-in after:h-[1px] after:flex-1 after:origin-right after:bg-gray-600 after:duration-700 after:ease-in'
+								? 'before:h-[1px] before:flex-1 before:origin-right before:bg-gray-600 before:duration-700 before:ease-in after:h-[1px] after:flex-1 after:origin-right after:bg-gray-600 after:duration-700 after:ease-in'
 								: 'before:flex-none after:flex-none'
 						}`}>
 						<h2 className='relative inline-block border-b-2 border-[#00ADB5] text-3xl font-bold uppercase text-[#EEEEEE] md:text-4xl'>
@@ -38,7 +36,7 @@ const About = () => {
 						className={`relative order-3 mt-5 text-start after:absolute after:-right-3 after:top-0 after:hidden after:w-[1px] lg:col-span-2 after:lg:order-2 after:lg:block ${
 							visible ? 'after:h-[100%]' : 'after:h-0'
 						} after:origin-top after:bg-gray-600 after:delay-150 after:duration-700 after:ease-in`}>
-						<p className='py-4 text-[#EEEEEE] opacity-75'>
+						<p className='py-4 text-[#EEEEEE]'>
 							My first touch with Front-End Web Development was back in the
 							Internship in 2016, before I went into college. However, my
 							passion for Front-End Web Development only started back in my last
@@ -46,18 +44,18 @@ const About = () => {
 							at the university, and I immediately got attached to every aspects
 							of Web Development taught in that course.
 						</p>
-						<p className='py-4 text-[#EEEEEE] opacity-75'>
+						<p className='py-4 text-[#EEEEEE]'>
 							Ever since, Front-End Web Development has been a really intriguing
 							topic to me, and it always piques my interest and passion when it
 							comes to Front-End Web Development subject or just Web Development
 							in general.
 						</p>
-						<p className='py-4 text-[#EEEEEE] opacity-75'>
+						<p className='py-4 text-[#EEEEEE]'>
 							Though I am most proficient in building front-end applications
 							using HTML, CSS, Javascript, and React, I am a quick learner and
 							can pick up new tech stacks as needed.
 						</p>
-						<p className='py-4 text-[#EEEEEE] opacity-75'>
+						<p className='py-4 text-[#EEEEEE]'>
 							I like reading novels, watching Youtube and playing games during
 							my free time.
 						</p>
@@ -70,7 +68,7 @@ const About = () => {
 								href='projects'
 								smooth
 								duration={200}
-								className='inline-block cursor-pointer border-b-2 border-b-[#00ADB5]  font-semibold uppercase text-[#EEEEEE] opacity-75'>
+								className='inline-block cursor-pointer border-b-2 border-b-[#00ADB5] font-semibold uppercase text-[#EEEEEE] opacity-75'>
 								Checkout my projects
 							</Link>
 						</div>
@@ -84,7 +82,7 @@ const About = () => {
 							/>
 							<LazyLoadImage
 								src={Avatar}
-								alt=''
+								alt='Sang Le Avatar'
 								className='h-full w-full object-cover'
 							/>
 						</picture>
