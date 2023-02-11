@@ -23,7 +23,7 @@ const Hero = () => {
 					ref={ref}
 					className={`mx-auto flex w-full max-w-[1240px] flex-col items-center justify-center gap-4 p-2 ${
 						visible ? 'opacity-100' : 'opacity-0'
-					} delay-100 duration-700 ease-in`}>
+					} duration-300 ease-in`}>
 					<div>
 						<p className='text-base font-semibold uppercase tracking-wider text-[#EEEEEE] opacity-75 sm:text-2xl'>
 							Nice to meet you.
