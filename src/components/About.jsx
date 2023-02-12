@@ -41,14 +41,14 @@ const About = () => {
 							Internship in 2016, before I went into college. However, my
 							passion for Front-End Web Development only started back in my last
 							school year in 2022 when I enrolled in the Web Development course
-							at the university, and I immediately got attached to every aspects
+							at the university, and I immediately got attached to every aspect
 							of Web Development taught in that course.
 						</p>
 						<p className='py-4 text-[#EEEEEE]'>
-							Ever since, Front-End Web Development has been a really intriguing
-							topic to me, and it always piques my interest and passion when it
-							comes to Front-End Web Development subject or just Web Development
-							in general.
+							Ever since Front-End Web Development has been an intriguing topic
+							to me, and it always piques my interest and passion when it comes
+							to Front-End Web Development subject or just Web Development in
+							general.
 						</p>
 						<p className='py-4 text-[#EEEEEE]'>
 							Though I am most proficient in building front-end applications
