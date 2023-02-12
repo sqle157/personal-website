@@ -68,7 +68,7 @@ const About = () => {
 								href='projects'
 								smooth
 								duration={200}
-								className='inline-block cursor-pointer border-b-2 border-b-[#00ADB5] font-semibold uppercase text-[#EEEEEE] opacity-75'>
+								className='inline-block cursor-pointer border-b-2 border-b-[#00ADB5] font-semibold uppercase text-[#EEEEEE]'>
 								Checkout my projects
 							</Link>
 						</div>
