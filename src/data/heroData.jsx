@@ -33,7 +33,7 @@ export const heroData = [
 		id: 4,
 		title: 'resume',
 		image: <BsFillPersonLinesFill size={20} aria-hidden />,
-		href: Resume,
+		href: '../assets/Sang_Le_Resume.pdf',
 		download: true,
 	},
 ];
