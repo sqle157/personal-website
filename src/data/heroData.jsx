@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 // File
-import Resume from '../assets/Sang_Le_Resume.pdf';
+import Resume from '../../public/Sang_Le_Resume.pdf';
 
 // Global data
 // Since this file export jsx element so it has to be .jsx file (vite strict rule)
@@ -33,7 +33,7 @@ export const heroData = [
 		id: 4,
 		title: 'resume',
 		image: <BsFillPersonLinesFill size={20} aria-hidden />,
-		href: './assets/Sang_Le_Resume.pdf',
+		href: './Sang_Le_Resume.pdf',
 		download: true,
 	},
 ];
