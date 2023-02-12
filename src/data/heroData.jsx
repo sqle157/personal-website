@@ -2,8 +2,6 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-// File
-import Resume from '../../public/Sang_Le_Resume.pdf';
 
 // Global data
 // Since this file export jsx element so it has to be .jsx file (vite strict rule)
