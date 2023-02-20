@@ -4,6 +4,9 @@ import Project1 from '../assets/images/desktop/project-1.webp';
 import Project2 from '../assets/images/desktop/project-2.webp';
 import Project3 from '../assets/images/desktop/project-3.webp';
 import Project4 from '../assets/images/desktop/project-4.webp';
+import Project0Tablet from '../assets/images/tablet/project-0.webp';
+import Project2Tablet from '../assets/images/tablet/project-2.webp';
+import Project4Tablet from '../assets/images/tablet/project-4.webp';
 import Project0Mobile from '../assets/images/mobile/project-0.webp';
 import Project1Mobile from '../assets/images/mobile/project-1.webp';
 import Project2Mobile from '../assets/images/mobile/project-2.webp';
@@ -15,6 +18,7 @@ export const projectsData = [
 		id: 0,
 		image: {
 			desktop: Project0,
+			tablet: Project0Tablet,
 			mobile: Project0Mobile,
 		},
 		title: 'Kanban Task Management',
@@ -41,6 +45,7 @@ export const projectsData = [
 		id: 2,
 		image: {
 			desktop: Project2,
+			tablet: Project2Tablet,
 			mobile: Project2Mobile,
 		},
 		title: 'ECOMMERCE WEBSITE',
@@ -67,6 +72,7 @@ export const projectsData = [
 		id: 4,
 		image: {
 			desktop: Project4,
+			tablet: Project4Tablet,
 			mobile: Project4Mobile,
 		},
 		title: 'Designo multi-page website',

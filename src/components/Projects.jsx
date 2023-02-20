@@ -44,6 +44,12 @@ const Projects = () => {
 												media='(max-width: 640px)'
 												srcSet={image.mobile}
 											/>
+											{image.tablet && (
+												<source
+													media='(max-width: 800px)'
+													srcSet={image.tablet}
+												/>
+											)}
 											<LazyLoadImage
 												src={image.desktop}
 												alt={title}
