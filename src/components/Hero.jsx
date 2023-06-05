@@ -36,7 +36,7 @@ const Hero = () => {
 						</h2>
 						<p className='mx-auto py-2 text-[0.8125rem] text-[#EEEEEE] sm:max-w-[70%] sm:text-xl'>
 							I'm focused on building responsive front-end web applications.
-							With every line of code, I strive to create a clean and beautiful
+							With every line of code, I strive to create a clean and visually appealing
 							product.
 						</p>
 					</div>
