@@ -37,27 +37,16 @@ const About = () => {
 							visible ? 'after:h-[100%]' : 'after:h-0'
 						} after:origin-top after:bg-gray-600 after:delay-150 after:duration-700 after:ease-in`}>
 						<p className='py-4 text-[#EEEEEE]'>
-							My first touch with Front-End Web Development was back in the
-							Internship in 2016, before I went into college. However, my
-							passion for Front-End Web Development only started back in my last
-							school year in 2022 when I enrolled in the Web Development course
-							at the university, and I immediately got attached to every aspect
-							of Web Development taught in that course.
+							During my internship in 2016, prior to attending college, I had my first encounter with Front-End Web Development. However, it was not until my final year of school in 2022, when I enrolled in a Web Development course at the university, that my genuine passion for Front-End Web Development began to blossom. I found myself deeply engaged with every facet of Web Development covered in that course.
 						</p>
 						<p className='py-4 text-[#EEEEEE]'>
-							Ever since Front-End Web Development has been an intriguing topic
-							to me, and it always piques my interest and passion when it comes
-							to Front-End Web Development subject or just Web Development in
-							general.
+							Since then, Front-End Web Development has remained a captivating subject for me, consistently igniting my enthusiasm and dedication, whether it pertains to Front-End Web Development specifically or the broader field of Web Development.
 						</p>
 						<p className='py-4 text-[#EEEEEE]'>
-							Though I am most proficient in building front-end applications
-							using HTML, CSS, Javascript, and React, I am a quick learner and
-							can pick up new tech stacks as needed.
+							While I excel in constructing front-end applications using HTML, CSS, Javascript, and React, I possess an inherent ability to swiftly grasp new technology stacks when required.
 						</p>
 						<p className='py-4 text-[#EEEEEE]'>
-							I like reading novels, watching Youtube and playing games during
-							my free time.
+							During my leisure time, I enjoy indulging in the pleasures of reading novels, watching educational content on platforms like YouTube, and occasionally immersing myself in gaming experiences.
 						</p>
 						<div
 							className={`mt-20 flex items-center gap-5 ${
@@ -69,7 +58,7 @@ const About = () => {
 								smooth
 								duration={200}
 								className='inline-block cursor-pointer border-b-2 border-b-[#00ADB5] font-semibold uppercase text-[#EEEEEE]'>
-								Checkout my projects
+								My projects
 							</Link>
 						</div>
 					</div>
