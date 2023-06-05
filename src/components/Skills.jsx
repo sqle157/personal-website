@@ -16,10 +16,10 @@ const Skills = () => {
 		<ActiveElementContainer visible={visible} active='skills'>
 			<section
 				id='skills'
-				className='border-b border-b-gray-600 bg-[#393E46] py-[7.5rem] px-5 md:py-[10rem]'>
+				className='border-b border-b-gray-600 bg-[#393E46] px-5 py-[7.5rem] md:py-[10rem]'>
 				<div
 					ref={ref}
-					className={`mx-auto grid w-full max-w-[1240px] grid-cols-1 gap-12 ${
+					className={`mx-auto grid w-full max-w-[1600px] grid-cols-1 gap-12 ${
 						visible ? 'opacity-100' : 'opacity-0'
 					} duration-500 ease-in`}>
 					<div
@@ -28,7 +28,7 @@ const Skills = () => {
 								? 'before:h-[1px] before:flex-1 before:origin-right before:bg-gray-600 before:duration-700 before:ease-in after:h-[1px] after:flex-1 after:origin-right after:bg-gray-600 after:duration-700 after:ease-in'
 								: 'before:flex-none after:flex-none'
 						}`}>
-						<h2 className='inline-block border-b-2 border-[#00ADB5] text-3xl font-bold uppercase text-[#EEEEEE] md:text-4xl'>
+						<h2 className='inline-block border-b-2 border-[#00ADB5] text-3xl font-bold uppercase text-[#EEEEEE] md:text-4xl 2xl:text-6xl'>
 							Skills
 						</h2>
 					</div>

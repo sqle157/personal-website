@@ -13,6 +13,10 @@ module.exports = {
 			animation: {
 				'open-menu': 'open-menu 0.5s ease-in-out forwards',
 			},
+			screens: {
+				md: '800px',
+				'2xl': '1800px',
+			},
 		},
 	},
 	plugins: [],

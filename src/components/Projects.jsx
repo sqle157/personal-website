@@ -16,10 +16,10 @@ const Projects = () => {
 		<ActiveElementContainer visible={visible} active='projects'>
 			<section
 				id='projects'
-				className='w-full border-b border-b-gray-600 py-[7.5rem] px-5 md:py-[10rem]'>
+				className='w-full border-b border-b-gray-600 px-5 py-[7.5rem] md:py-[10rem]'>
 				<div
 					ref={ref}
-					className={`mx-auto grid w-full max-w-[1240px] grid-cols-1 gap-12 ${
+					className={`mx-auto grid w-full max-w-[1600px] grid-cols-1 gap-12 ${
 						visible ? 'opacity-100' : 'opacity-0'
 					} duration-500 ease-in`}>
 					<div
@@ -28,7 +28,7 @@ const Projects = () => {
 								? 'before:h-[1px] before:flex-1 before:origin-right  before:bg-gray-600 before:duration-700 before:ease-in after:h-[1px] after:flex-1 after:origin-right after:bg-gray-600 after:duration-700 after:ease-in'
 								: 'before:flex-none after:flex-none'
 						}`}>
-						<h2 className='inline-block border-b-2 border-[#00ADB5] text-3xl font-bold uppercase text-[#EEEEEE] md:text-4xl'>
+						<h2 className='inline-block border-b-2 border-[#00ADB5] text-3xl font-bold uppercase text-[#EEEEEE] md:text-4xl 2xl:text-6xl'>
 							Projects
 						</h2>
 					</div>
@@ -60,10 +60,10 @@ const Projects = () => {
 										</picture>
 									</div>
 									<div className='col-span-full row-span-full flex flex-col items-center justify-center bg-[#0a192f]/90 p-3 text-center duration-500 ease-in-out sm:opacity-0 group-focus-within:sm:opacity-100 group-hover:sm:opacity-100'>
-										<h3 className='mx-auto border-b-2 border-b-[#00ADB5] py-2 text-xl font-bold uppercase text-[#EEEEEE]'>
+										<h3 className='mx-auto border-b-2 border-b-[#00ADB5] py-2 text-xl font-bold uppercase text-[#EEEEEE] 2xl:text-2xl'>
 											{title}
 										</h3>
-										<p className='mt-4 text-sm leading-[1.75] text-[#EEEEEE]'>
+										<p className='mt-4 text-sm leading-[1.75] text-[#EEEEEE] 2xl:text-lg'>
 											{description}
 										</p>
 										<div className='mt-6 w-full border-t-2 border-t-[#00ADB5] text-start'>
@@ -74,7 +74,7 @@ const Projects = () => {
 													<li
 														key={index}
 														role='listitem'
-														className='grid place-items-center rounded-lg bg-[#495670] p-1 text-[12px] text-[#00FFF6] shadow-xl'>
+														className='grid place-items-center rounded-lg bg-[#495670] p-1 text-[12px] text-[#00FFF6] shadow-xl 2xl:text-lg'>
 														{tag}
 													</li>
 												))}

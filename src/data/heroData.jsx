@@ -8,19 +8,21 @@ export const heroData = [
 	{
 		id: 1,
 		title: 'github',
-		image: <FaGithub size={20} aria-hidden />,
+		image: <FaGithub size={20} aria-hidden className='2xl:h-10 2xl:w-10' />,
 		href: 'https://github.com/sqle157',
 	},
 	{
 		id: 2,
 		title: 'linkedin',
-		image: <FaLinkedin size={20} aria-hidden />,
+		image: <FaLinkedin size={20} aria-hidden className='2xl:h-10 2xl:w-10' />,
 		href: 'https://www.linkedin.com/in/sangle98/',
 	},
 	{
 		id: 3,
 		title: 'email',
-		image: <AiOutlineMail size={20} aria-hidden />,
+		image: (
+			<AiOutlineMail size={20} aria-hidden className='2xl:h-10 2xl:w-10' />
+		),
 		href: 'mailto:sqle157@gmail.com',
-	}
+	},
 ];

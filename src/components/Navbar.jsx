@@ -47,7 +47,7 @@ const Navbar = () => {
 					scrollY > 90 &&
 					'bg-[#252A34]/50 shadow-sm shadow-slate-600 backdrop-blur-md'
 				} duration-300 ease-in`}>
-				<div className='mx-auto flex h-full w-full max-w-[1240px] items-center justify-between pr-4'>
+				<div className='mx-auto flex h-full w-full max-w-[1600px] items-center justify-between pr-4'>
 					{/* Logo */}
 					<div className='h-full'>
 						<Link
@@ -74,7 +74,7 @@ const Navbar = () => {
 									<Link
 										className={`cursor-pointer border-[#00ADB5] uppercase tracking-wide text-[#EEEEEE] hover:border-b-2 ${
 											activeElement === to ? 'border-b-2' : ''
-										}`}
+										} 2xl:text-3xl`}
 										to={to}
 										href={to}
 										smooth
