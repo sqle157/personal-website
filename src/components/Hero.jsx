@@ -46,10 +46,9 @@ const Hero = () => {
 								key={id}
 								href={href}
 								rel='noreferrer'
-								target={!download ? '_blank' : undefined}
-								download={download}
-								title={!download ? 'open in a new tab' : undefined}
-								aria-label={!download ? `${title}` : `Download ${title}`}
+								target='_blank'
+								title='open in a new tab'
+								aria-label={title}
 								className='cursor-pointer rounded-full bg-[#EEEEEE] p-4 text-black shadow-md shadow-gray-400 duration-300 ease-in focus-within:scale-110 hover:scale-110 sm:p-6'>
 								{image}
 							</a>
