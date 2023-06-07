@@ -21,7 +21,7 @@ const Hero = () => {
 				className='relative flex h-screen w-full items-center justify-center text-center'>
 				<div
 					ref={ref}
-					className={`mx-auto flex w-full max-w-[1600px] flex-col items-center justify-center gap-4 p-2 ${
+					className={`mx-auto flex w-full max-w-[1240px] flex-col items-center justify-center gap-4 p-2 2xl:max-w-[1600px] ${
 						visible ? 'opacity-100' : 'opacity-0'
 					} delay-100 duration-700 ease-in`}>
 					<div>

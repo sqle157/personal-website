@@ -47,7 +47,7 @@ const Navbar = () => {
 					scrollY > 90 &&
 					'bg-[#252A34]/50 shadow-sm shadow-slate-600 backdrop-blur-md'
 				} duration-300 ease-in`}>
-				<div className='mx-auto flex h-full w-full max-w-[1600px] items-center justify-between pr-4'>
+				<div className='mx-auto flex h-full w-full max-w-[1240px] items-center justify-between pr-4 2xl:max-w-[1600px]'>
 					{/* Logo */}
 					<div className='h-full'>
 						<Link

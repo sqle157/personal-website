@@ -4,14 +4,17 @@ import Project1 from '../assets/images/desktop/project-1.webp';
 import Project2 from '../assets/images/desktop/project-2.webp';
 import Project3 from '../assets/images/desktop/project-3.webp';
 import Project4 from '../assets/images/desktop/project-4.webp';
+import Project5 from '../assets/images/desktop/project-5.webp';
 import Project0Tablet from '../assets/images/tablet/project-0.webp';
-import Project2Tablet from '../assets/images/tablet/project-2.webp';
-import Project4Tablet from '../assets/images/tablet/project-4.webp';
+import Project1Tablet from '../assets/images/tablet/project-1.webp';
+import Project3Tablet from '../assets/images/tablet/project-3.webp';
+import Project5Tablet from '../assets/images/tablet/project-5.webp';
 import Project0Mobile from '../assets/images/mobile/project-0.webp';
 import Project1Mobile from '../assets/images/mobile/project-1.webp';
 import Project2Mobile from '../assets/images/mobile/project-2.webp';
 import Project3Mobile from '../assets/images/mobile/project-3.webp';
 import Project4Mobile from '../assets/images/mobile/project-4.webp';
+import Project5Mobile from '../assets/images/mobile/project-5.webp';
 
 export const projectsData = [
 	{
@@ -21,6 +24,26 @@ export const projectsData = [
 			tablet: Project0Tablet,
 			mobile: Project0Mobile,
 		},
+		title: 'Bac Ha Vet Website',
+		description:
+			'A freelance project website built with Next.js 13 App Router and Headless CMS platform Sanity (will update the offical link when the client completes hosting setup with another party)',
+		tags: [
+			'Freelance',
+			'Next.js',
+			'Sanity.io',
+			'Typescript',
+			'Tailwind',
+			'SSR',
+		],
+		demo: 'https://bac-ha-vet.vercel.app/',
+	},
+	{
+		id: 1,
+		image: {
+			desktop: Project1,
+			tablet: Project1Tablet,
+			mobile: Project1Mobile,
+		},
 		title: 'Kanban Task Management',
 		description:
 			'Kanban Task Management Web Application, integrated with real-time database.',
@@ -29,10 +52,10 @@ export const projectsData = [
 		code: 'https://github.com/sqle157/kanban-task-management',
 	},
 	{
-		id: 1,
+		id: 2,
 		image: {
-			desktop: Project1,
-			mobile: Project1Mobile,
+			desktop: Project2,
+			mobile: Project2Mobile,
 		},
 		title: 'Note App',
 		description:
@@ -42,11 +65,11 @@ export const projectsData = [
 		code: 'https://github.com/sqle157/mern-note-app',
 	},
 	{
-		id: 2,
+		id: 3,
 		image: {
-			desktop: Project2,
-			tablet: Project2Tablet,
-			mobile: Project2Mobile,
+			desktop: Project3,
+			tablet: Project3Tablet,
+			mobile: Project3Mobile,
 		},
 		title: 'ECOMMERCE WEBSITE',
 		description:
@@ -56,10 +79,10 @@ export const projectsData = [
 		code: 'https://github.com/sqle157/mern-ecommerce-website',
 	},
 	{
-		id: 3,
+		id: 4,
 		image: {
-			desktop: Project3,
-			mobile: Project3Mobile,
+			desktop: Project4,
+			mobile: Project4Mobile,
 		},
 		title: 'Rest Country API',
 		description:
@@ -69,11 +92,11 @@ export const projectsData = [
 		code: 'https://github.com/sqle157/rest-countries-api',
 	},
 	{
-		id: 4,
+		id: 5,
 		image: {
-			desktop: Project4,
-			tablet: Project4Tablet,
-			mobile: Project4Mobile,
+			desktop: Project5,
+			tablet: Project5Tablet,
+			mobile: Project5Mobile,
 		},
 		title: 'Designo multi-page website',
 		description: 'A Multi Page Website built with diverse layout design.',

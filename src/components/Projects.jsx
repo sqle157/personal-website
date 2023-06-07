@@ -19,31 +19,33 @@ const Projects = () => {
 				className='w-full border-b border-b-gray-600 px-5 py-[7.5rem] md:py-[10rem]'>
 				<div
 					ref={ref}
-					className={`mx-auto grid w-full max-w-[1600px] grid-cols-1 gap-12 ${
+					className={`mx-auto grid w-full max-w-[1240px] grid-cols-1 gap-12 2xl:max-w-[1600px] ${
 						visible ? 'opacity-100' : 'opacity-0'
 					} duration-500 ease-in`}>
 					<div
 						className={`mx-auto flex w-full items-center gap-5 lg:m-0 ${
 							visible
-								? 'before:h-[1px] before:flex-1 before:origin-right  before:bg-gray-600 before:duration-700 before:ease-in after:h-[1px] after:flex-1 after:origin-right after:bg-gray-600 after:duration-700 after:ease-in'
+								? 'before:h-[1px] before:flex-1 before:origin-right before:bg-gray-600 before:duration-700 before:ease-in after:h-[1px] after:flex-1 after:origin-right after:bg-gray-600 after:duration-700 after:ease-in'
 								: 'before:flex-none after:flex-none'
 						}`}>
 						<h2 className='inline-block border-b-2 border-[#00ADB5] text-3xl font-bold uppercase text-[#EEEEEE] md:text-4xl 2xl:text-6xl'>
 							Projects
 						</h2>
 					</div>
-					<div className='grid w-full grid-flow-row-dense grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3'>
+					<div className='grid w-full grid-flow-row-dense grid-cols-1 gap-10 sm:grid-cols-2'>
 						{projectsData.map(
 							({ id, image, title, description, tags, demo, code }) => (
 								<div
 									key={id}
-									className='group grid auto-rows-[450px] place-content-stretch overflow-hidden rounded-lg bg-[#393E46] shadow-sm shadow-slate-600 sm:auto-rows-[350px]'>
+									className='group grid auto-rows-[450px] place-content-stretch overflow-hidden rounded-lg bg-[#393E46] shadow-sm shadow-slate-600'>
 									<div className='col-span-full row-span-full '>
 										<picture>
-											<source
-												media='(max-width: 640px)'
-												srcSet={image.mobile}
-											/>
+											{image.mobile && (
+												<source
+													media='(max-width: 640px)'
+													srcSet={image.mobile}
+												/>
+											)}
 											{image.tablet && (
 												<source
 													media='(max-width: 800px)'
@@ -104,28 +106,34 @@ const Projects = () => {
 														<path d='M15 4l5 0l0 5' />
 													</svg>
 												</a>
-												<a
-													href={code}
-													target='_blank'
-													title='open in a new tab'
-													aria-label='Github'
-													className='text-[#00FFF6] shadow-md'>
-													<svg
-														xmlns='http://www.w3.org/2000/svg'
-														className='icon icon-tabler icon-tabler-brand-github'
-														width='24'
-														height='24'
-														viewBox='0 0 24 24'
-														strokeWidth='2'
-														stroke='currentColor'
-														fill='none'
-														strokeLinecap='round'
-														strokeLinejoin='round'
-														aria-hidden='true'>
-														<path stroke='none' d='M0 0h24v24H0z' fill='none' />
-														<path d='M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5' />
-													</svg>
-												</a>
+												{code && (
+													<a
+														href={code}
+														target='_blank'
+														title='open in a new tab'
+														aria-label='Github'
+														className='text-[#00FFF6] shadow-md'>
+														<svg
+															xmlns='http://www.w3.org/2000/svg'
+															className='icon icon-tabler icon-tabler-brand-github'
+															width='24'
+															height='24'
+															viewBox='0 0 24 24'
+															strokeWidth='2'
+															stroke='currentColor'
+															fill='none'
+															strokeLinecap='round'
+															strokeLinejoin='round'
+															aria-hidden='true'>
+															<path
+																stroke='none'
+																d='M0 0h24v24H0z'
+																fill='none'
+															/>
+															<path d='M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5' />
+														</svg>
+													</a>
+												)}
 											</div>
 										</div>
 									</div>

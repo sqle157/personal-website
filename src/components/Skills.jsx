@@ -19,7 +19,7 @@ const Skills = () => {
 				className='border-b border-b-gray-600 bg-[#393E46] px-5 py-[7.5rem] md:py-[10rem]'>
 				<div
 					ref={ref}
-					className={`mx-auto grid w-full max-w-[1600px] grid-cols-1 gap-12 ${
+					className={`mx-auto grid w-full max-w-[1240px] grid-cols-1 gap-12 2xl:max-w-[1600px] ${
 						visible ? 'opacity-100' : 'opacity-0'
 					} duration-500 ease-in`}>
 					<div

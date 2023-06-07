@@ -20,7 +20,7 @@ const Contact = () => {
 				className='md-pb[7.5rem] grid w-full grid-cols-1 gap-20 border-b border-b-gray-600 bg-[#393E46] px-5 py-[7.5rem] md:pt-[10rem]'>
 				<div
 					ref={ref}
-					className={`mx-auto grid w-full max-w-[1600px] grid-cols-1 gap-10 ${
+					className={`mx-auto grid w-full max-w-[1240px] grid-cols-1 gap-10 2xl:max-w-[1600px] ${
 						visible ? 'opacity-100' : 'opacity-0'
 					} duration-500 ease-in`}>
 					<div
@@ -34,12 +34,12 @@ const Contact = () => {
 						</h2>
 					</div>
 
-					<p className='mx-auto max-w-[1000px] text-center text-base text-[#EEEEEE] opacity-75 sm:text-xl 2xl:text-3xl'>
+					<p className='mx-auto max-w-[700px] text-center text-base text-[#EEEEEE] opacity-75 sm:text-xl 2xl:max-w-[1000px] 2xl:text-3xl'>
 						My inbox is always open. Whether you have a question or just want to
 						say hi, I'll try my best to get back to you!{' '}
 					</p>
 
-					<div className='mx-auto grid w-full max-w-[1000px] grid-cols-1 border-y-2 border-y-gray-600 md:grid-cols-2'>
+					<div className='mx-auto grid w-full max-w-[700px] grid-cols-1 border-y-2 border-y-gray-600 md:grid-cols-2 2xl:max-w-[1000px]'>
 						<div className='group'>
 							<a
 								href='https://github.com/sqle157'
