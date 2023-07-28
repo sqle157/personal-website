@@ -32,7 +32,7 @@ const Projects = () => {
 							Projects
 						</h2>
 					</div>
-					<div className='grid w-full grid-flow-row-dense grid-cols-1 gap-10 sm:grid-cols-2'>
+					<div className='grid w-full grid-flow-row-dense grid-cols-1 gap-10 md:grid-cols-2'>
 						{projectsData.map(
 							({ id, image, title, description, tags, demo, code }) => (
 								<div

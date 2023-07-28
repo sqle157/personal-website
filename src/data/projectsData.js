@@ -26,7 +26,7 @@ export const projectsData = [
 		},
 		title: 'Bac Ha Vet Website',
 		description:
-			'A freelance project website built with Next.js 13 App Router and Headless CMS platform Sanity (will update the offical link when the client completes hosting setup with another party)',
+			'A freelance project website built for a agricultural products import and export joint stock company with Next.js 13 App Router and Headless CMS platform Sanity',
 		tags: [
 			'Freelance',
 			'Next.js',
@@ -34,8 +34,21 @@ export const projectsData = [
 			'Typescript',
 			'Tailwind',
 			'SSR',
+			'API',
 		],
-		demo: 'https://bac-ha-vet.vercel.app/',
+		demo: 'https://bachavet.vn/',
+	},
+	{
+		id: 4,
+		image: {
+			desktop: Project4,
+			mobile: Project4Mobile,
+		},
+		title: 'Wa Sushi Restaurant',
+		description:
+			'A freelance project website built for a sushi restaurant in Munich with WordPress and SEO optimized.',
+		tags: ['Frontend', 'WordPress', 'JavaScript', 'PHP', 'SASS', 'SEO', 'CDN'],
+		demo: 'https://wa-sushi.de/',
 	},
 	{
 		id: 1,
@@ -47,7 +60,7 @@ export const projectsData = [
 		title: 'Kanban Task Management',
 		description:
 			'Kanban Task Management Web Application, integrated with real-time database.',
-		tags: ['Fullstack', 'React', 'Typescript', 'MongoDB', 'Tailwind'],
+		tags: ['Fullstack', 'React', 'Typescript', 'MongoDB', 'Tailwind', 'API'],
 		demo: 'https://kanban-task-management-production.up.railway.app/',
 		code: 'https://github.com/sqle157/kanban-task-management',
 	},
@@ -60,7 +73,7 @@ export const projectsData = [
 		title: 'Note App',
 		description:
 			'A simple note app implemented with fully functional CRUD operations.',
-		tags: ['Fullstack', 'React', 'MongoDB', 'Javascript', 'CSS'],
+		tags: ['Fullstack', 'React', 'MongoDB', 'Javascript', 'CSS', 'API'],
 		demo: 'https://mern-note-app-production.up.railway.app/',
 		code: 'https://github.com/sqle157/mern-note-app',
 	},
@@ -74,22 +87,9 @@ export const projectsData = [
 		title: 'ECOMMERCE WEBSITE',
 		description:
 			'An Ecommerce Website for customer to buy their favorite product.',
-		tags: ['Fullstack', 'React', 'MongoDB', 'Javascript', 'SASS'],
+		tags: ['Fullstack', 'React', 'MongoDB', 'Javascript', 'SASS', 'API'],
 		demo: 'https://mern-ecommerce-website-production.up.railway.app/',
 		code: 'https://github.com/sqle157/mern-ecommerce-website',
-	},
-	{
-		id: 4,
-		image: {
-			desktop: Project4,
-			mobile: Project4Mobile,
-		},
-		title: 'Rest Country API',
-		description:
-			'A web app intergating with REST Countries API to pull country data and display it.',
-		tags: ['Frontend', 'React', 'API', 'Javascript', 'SASS'],
-		demo: 'https://rest-countries-hilxxioke-sqle157.vercel.app/',
-		code: 'https://github.com/sqle157/rest-countries-api',
 	},
 	{
 		id: 5,

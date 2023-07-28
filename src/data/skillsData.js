@@ -12,6 +12,7 @@ import Heroku from '../assets/icons/heroku.svg';
 import NextJS from '../assets/icons/nextjs.svg';
 import Sanity from '../assets/icons/sanity.svg';
 import Vercel from '../assets/icons/vercel.svg';
+import WordPress from '../assets/icons/wordpress.svg';
 
 export const skillsData = [
 	{
@@ -72,34 +73,41 @@ export const skillsData = [
 	},
 	{
 		id: 9,
+		image: WordPress,
+		title: 'WordPress',
+		width: 100,
+		height: 100,
+	},
+	{
+		id: 10,
 		image: Sanity,
 		title: 'Sanity',
 		width: 100,
 		height: 100,
 	},
 	{
-		id: 10,
+		id: 11,
 		image: MongoDB,
 		title: 'MongoDB',
 		width: 100,
 		height: 100,
 	},
 	{
-		id: 11,
+		id: 12,
 		image: Github,
 		title: 'Github',
 		width: 100,
 		height: 100,
 	},
 	{
-		id: 12,
+		id: 13,
 		image: Heroku,
 		title: 'Heroku',
 		width: 100,
 		height: 100,
 	},
 	{
-		id: 13,
+		id: 14,
 		image: Vercel,
 		title: 'Vercel',
 		width: 100,
